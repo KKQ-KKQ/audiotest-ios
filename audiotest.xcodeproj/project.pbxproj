@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A099BA3223FAB4000E3AD16 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2A099BA2223FAB4000E3AD16 /* LICENSE.txt */; };
+		2A099BA6223FAB9200E3AD16 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2A099BA4223FAB9200E3AD16 /* LICENSE */; };
+		2A099BA7223FAB9200E3AD16 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2A099BA5223FAB9200E3AD16 /* README.md */; };
 		2A4688B62231E5D9002AB3F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4688B52231E5D9002AB3F6 /* AppDelegate.m */; };
 		2A4688B92231E5D9002AB3F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4688B82231E5D9002AB3F6 /* ViewController.m */; };
 		2A4688BC2231E5D9002AB3F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4688BA2231E5D9002AB3F6 /* Main.storyboard */; };
@@ -22,6 +25,9 @@
 		2A099B9D223F6B2500E3AD16 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
 		2A099B9E223F6BA900E3AD16 /* CADebugMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
 		2A099B9F223F722300E3AD16 /* CADebugPrintf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		2A099BA2223FAB4000E3AD16 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		2A099BA4223FAB9200E3AD16 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2A099BA5223FAB9200E3AD16 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2A4688B12231E5D9002AB3F6 /* audiotest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audiotest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A4688B42231E5D9002AB3F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A4688B52231E5D9002AB3F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,9 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A099BA1223FAB2300E3AD16 /* PublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				2A099B9F223F722300E3AD16 /* CADebugPrintf.h */,
+				2A099B9E223F6BA900E3AD16 /* CADebugMacros.h */,
+				2A099B9D223F6B2500E3AD16 /* CAStreamBasicDescription.h */,
+				2A099BA2223FAB4000E3AD16 /* LICENSE.txt */,
+			);
+			path = PublicUtility;
+			sourceTree = "<group>";
+		};
 		2A4688A82231E5D9002AB3F6 = {
 			isa = PBXGroup;
 			children = (
+				2A099BA4223FAB9200E3AD16 /* LICENSE */,
+				2A099BA5223FAB9200E3AD16 /* README.md */,
 				2A4688B32231E5D9002AB3F6 /* audiotest */,
 				2A4688B22231E5D9002AB3F6 /* Products */,
 				2A4862F122324EAF00765F8F /* Frameworks */,
@@ -71,9 +90,7 @@
 		2A4688B32231E5D9002AB3F6 /* audiotest */ = {
 			isa = PBXGroup;
 			children = (
-				2A099B9F223F722300E3AD16 /* CADebugPrintf.h */,
-				2A099B9E223F6BA900E3AD16 /* CADebugMacros.h */,
-				2A099B9D223F6B2500E3AD16 /* CAStreamBasicDescription.h */,
+				2A099BA1223FAB2300E3AD16 /* PublicUtility */,
 				2A4688CA2231E604002AB3F6 /* AudioEngine.h */,
 				2A4688CB2231E604002AB3F6 /* AudioEngine.mm */,
 				2A4688B42231E5D9002AB3F6 /* AppDelegate.h */,
@@ -155,9 +172,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A099BA7223FAB9200E3AD16 /* README.md in Resources */,
+				2A099BA3223FAB4000E3AD16 /* LICENSE.txt in Resources */,
 				2A4688C12231E5DC002AB3F6 /* LaunchScreen.storyboard in Resources */,
 				2A4688BE2231E5DC002AB3F6 /* Assets.xcassets in Resources */,
 				2A4688BC2231E5D9002AB3F6 /* Main.storyboard in Resources */,
+				2A099BA6223FAB9200E3AD16 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
